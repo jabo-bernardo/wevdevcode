@@ -1,4 +1,5 @@
 const { app, BrowserWindow, Menu } = require("electron");
+const path = require("path");
 
 function createWindow() {
 
@@ -11,11 +12,12 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true
         },
-        titleBarStyle: "hidden",
+        titleBarStyle: "customButtonsOnHover",
         frame: false,
         transparent: true
     });
-    win.loadURL("http://localhost:8517");
+    console.log("Hello")
+    win.loadFile(path.join(__dirname, "../public/index.html"));
 }
 
 app.whenReady().then(createWindow);

@@ -4,6 +4,7 @@
   /* Set height, width, borders, and global font properties here */
   font-family: monospace;
   height: 100%;
+  width: 100%;
   color: black;
   direction: ltr;
   border-top-right-radius: 8px;
