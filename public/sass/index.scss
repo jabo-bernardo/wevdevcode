@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.root {
+    border-radius: 8px;
+    width: 100%;
+    background: #DDD;
+    height: 100%;
+}
+
+.titlebar {
+    font-family: "Arial", "Roboto", sans-serif;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
