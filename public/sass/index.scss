@@ -5,14 +5,29 @@
 }
 
 .root {
-    border-radius: 8px;
     width: 100%;
-    background: #DDD;
     height: 100%;
+    border-radius: 8px;
 }
 
-.titlebar {
-    font-family: "Arial", "Roboto", sans-serif;
+.split, .gutter.gutter-horizontal {
+    float: left;
+}
+.gutter {
+    width: 2px!important;
+    height:100%;
+    background: rgb(22, 22, 22);
+}
+
+.gutter.gutter-horizontal {
+    cursor: ew-resize;
+}
+
+.file-selector {
+    background: #121212;
+    color: white;
+    padding: 0.5rem;
+    height: 100%;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }

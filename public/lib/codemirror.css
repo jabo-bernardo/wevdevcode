@@ -6,6 +6,12 @@
   height: 100%;
   color: black;
   direction: ltr;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.CodeMirror * {
+  font-family: "JetBrains Mono", "Consolas", monospace;
 }
 
 /* PADDING */

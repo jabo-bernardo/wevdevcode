@@ -16,48 +16,6 @@ function createWindow() {
         transparent: true
     });
     win.loadURL("http://localhost:8517");
-
-    let menuTemplate = [
-        {
-            label: "File",
-            submenu: [
-                {
-                    role: "quit"
-                },
-                {
-                    label: "Themes",
-                    submenu: [
-                        {
-                            label: "Monokai",
-                            click() {
-                                win.webContents.send("changeTheme", "monokai")
-                            }
-                        },
-                        {
-                            label: "Material",
-                            click() {
-                                win.webContents.send("changeTheme", "material")
-                            }
-                        },
-                        {
-                            label: "Material Darker",
-                            click() {
-                                win.webContents.send("changeTheme", "material-darker")
-                            }
-                        },{
-                            label: "Duotone Dark",
-                            click() {
-                                win.webContents.send("changeTheme", "duotone-dark")
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-
-    const menu = Menu.buildFromTemplate(menuTemplate);
-    Menu.setApplicationMenu(menu);
 }
 
 app.whenReady().then(createWindow);
