@@ -34,8 +34,8 @@ const {
 } = remote;
 const fs = require("fs");
 const path = require("path");
-let themes = fs.readdirSync("./public/themes");
-let languages = fs.readdirSync("./public/modes");
+let themes = fs.readdirSync("./assets/themes");
+let languages = fs.readdirSync("./assets/modes");
 
 function buildMenu() {
     const menu = new Menu();
