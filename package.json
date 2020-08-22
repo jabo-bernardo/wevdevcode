@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "echo Building... && webpack && echo Build Finished... && electron .",
+    "start:dev": "nodemon --ignore dist --exec npm start",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.2.1"
+    "electron": "^9.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -19,6 +23,7 @@
     "helmet": "^4.1.0",
     "helmet-csp": "^3.1.0",
     "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
     "morgan": "^1.10.0",
     "node-dir": "^0.1.17"
   }
